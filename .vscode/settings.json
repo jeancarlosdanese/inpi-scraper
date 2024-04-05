@@ -1,0 +1,23 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "black-formatter.args": ["--line-length", "140"],
+  "black-formatter.interpreter": [".venv/bin/python3"],
+  "python.defaultInterpreterPath": ".venv/bin/python3",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "files.exclude": {
+    "**/*.pyc": {
+      "when": "$(basename).py"
+    },
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "cSpell.enabled": false,
+  "editor.formatOnSave": true,
+  "files.autoSaveDelay": 600000
+}
